@@ -4,8 +4,7 @@ import _ from "lodash";
 
 //Create an array of page numbers [1,2,3] and map each page number to a list item
 //nb lodash used to create array
-const Pagination = props => {
-  const { itemsCount, pageSize, currentPage, onPageChange } = props;
+const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pagesCount = itemsCount / pageSize;
   const pages = _.range(1, pagesCount + 1);
 
